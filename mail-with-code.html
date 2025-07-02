@@ -1,51 +1,73 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
-    <style type="text/css">
-        @media (prefers-color-scheme: dark) {
-            .dark-mode-bg {
-                background-color: #C7E254 !important;
-                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z5n2HwAEoAJH9eJOSQAAAABJRU5ErkJggg==') !important;
-                background-repeat: repeat !important;
-            }
-            .dark-mode-text {
-                color: #000000 !important;
-            }
-        }
-    </style>
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
+  <style type="text/css">
+    /* Genel stil */
+    a, span { color: #F5F5F5 !important; text-decoration: none !important; }
+    /* Karanlık mod için yedek */
+    @media (prefers-color-scheme: dark) {
+      .social-links a, .social-links span {
+        color: #F5F5F5 !important;
+        text-shadow: 0 0 0 #F5F5F5 !important;
+        -webkit-text-fill-color: #F5F5F5 !important;
+      }
+    }
+    /* Gmail iOS için */
+    @media screen and (prefers-color-scheme: dark) {
+      .social-links a, .social-links span {
+        mix-blend-mode: difference;
+        color: #000000 !important; /* Siyah, karanlık modda beyaza çevrilecek */
+      }
+    }
+  </style>
 </head>
-<body style="background-color:#0E0E0E !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=='); background-repeat:repeat;">
-<table cellpadding="0" cellspacing="0" width="600" bgcolor="#0E0E0E" style="width:600px; background-color:#0E0E0E !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=='); background-repeat:repeat; color:#fff; border-spacing:0; border-collapse:collapse;">
-    <tr>
-        <td bgcolor="#0E0E0E" style="padding:0; text-align:center; background-color:#0E0E0E !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=='); background-repeat:repeat;">
-            <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/main/mail.png" alt="" width="600" height="160" style="display:block; width:600px; height:160px; max-width:600px; border:0; margin:0; padding:0;" />
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor="#0E0E0E" style="padding:0; text-align:left; background-color:#0E0E0E !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=='); background-repeat:repeat;">
-            <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#C7E254" style="background-color:#C7E254 !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z5n2HwAEoAJH9eJOSQAAAABJRU5ErkJggg=='); background-repeat:repeat;">
-                <tr>
-                    <td class="dark-mode-bg" bgcolor="#C7E254" style="text-align:left; vertical-align:middle; padding:10px 0 10px 20px; background-color:#C7E254 !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z5n2HwAEoAJH9eJOSQAAAABJRU5ErkJggg=='); background-repeat:repeat; color:#000;">
-                        <!-- Telefon ve mail -->
-                        <a class="dark-mode-text" href="tel:+905544029614" style="font-family:'Geist', Arial, Helvetica, sans-serif; color:#000000 !important; text-decoration:none; font-size:15px; font-weight:500; margin-right:20px; display:inline-block;">
-                            <span style="font-size:14px; vertical-align:middle; margin-right:0px; color:#000000 !important;">📱</span>
-                            <span style="vertical-align:sub; display:inline-block; font-size:14px; color:#000000 !important;">+90 554 402 9614</span>
-                        </a>
-                        <a class="dark-mode-text" href="mailto:eren@vristopay.com" style="font-family:'Geist', Arial, Helvetica, sans-serif; color:#000000 !important; text-decoration:none; font-size:15px; font-weight:500; display:inline-block;">
-                            <span style="font-size:16px; vertical-align:middle; margin-right:0px; color:#000000 !important;">✉️</span>
-                            <span style="vertical-align:middle; margin-right:0px; color:#000000 !important;"> eren@vristopay.com</span>
-                        </a>
-                    </td>
-                    <td class="dark-mode-bg" bgcolor="#C7E254" style="text-align:right; vertical-align:middle; padding:10px 20px 10px 0; background-color:#C7E254 !important; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z5n2HwAEoAJH9eJOSQAAAABJRU5ErkJggg=='); background-repeat:repeat;">
-                        <a href="https://vristopay.com" style="display:inline-block;">
-                            <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/main/logo.png" alt="logo" width="124" height="22" style="display:inline-block; border:0; vertical-align:middle" />
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
+<body>
+<table cellpadding="0" cellspacing="0" width="600"
+  style="width:600px; color:#F5F5F5 !important; border-spacing:0; border-collapse:collapse; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mP8/x8AAwMCAO4BvZkAAAAASUVORK5CYII='); background-repeat:repeat; background-color:#1A2526 !important;">
+  <tr>
+    <td
+      style="padding:0; text-align:center; background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mP8/x8AAwMCAO4BvZkAAAAASUVORK5CYII='); background-repeat:repeat; background-color:#1A2526 !important; color:#F5F5F5 !important;">
+      <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/main/mail.png" alt="" width="600" height="160" style="display:block; width:600px; height:160px; max-width:600px; border:0; margin:0; padding:0;" />
+    </td>
+  </tr>
+  <tr>
+    <td
+      style="padding:0; text-align:left; background-image:url('https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/bg2.png'); background-repeat:repeat; background-color:#1A2526 !important; color:#F5F5F5 !important;">
+      <table width="100%" cellpadding="0" cellspacing="0"
+        style="background-image:url('https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/bg2.png'); background-repeat:repeat; background-color:#1A2526 !important; color:#F5F5F5 !important;">
+        <tr>
+          <td class="social-links"
+            style="text-align:left; vertical-align:middle; padding:10px 0 10px 20px; background-image:url('https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/bg2.png'); background-repeat:repeat; background-color:#1A2526 !important; color:#F5F5F5 !important;">
+            <!-- Telefon ve mail -->
+            <a
+              href="tel:+905544029614"
+              style="font-family:'Geist', Arial, Helvetica, sans-serif; color:#F5F5F5 !important; text-decoration:none; font-size:15px; font-weight:500; margin-right:20px; display:inline-block; text-shadow:0 0 0 #F5F5F5 !important; -webkit-text-fill-color:#F5F5F5 !important; mso-style-textfont-color:#F5F5F5;">
+              <font color="#F5F5F5">
+                <span style="font-size:14px; vertical-align:middle; margin-right:0px; color:#F5F5F5 !important; text-shadow:0 0 0 #F5F5F5 !important; -webkit-text-fill-color:#F5F5F5 !important; mso-style-textfont-color:#F5F5F5;">📱</span>
+                <span style="vertical-align:sub; display:inline-block; font-size:14px; color:#F5F5F5 !important; text-shadow:0 0 0 #F5F5F5 !important; -webkit-text-fill-color:#F5F5F5 !important; mso-style-textfont-color:#F5F5F5;">+90 554 402 9614</span>
+              </font>
+            </a>
+            <a
+              href="mailto:eren@vristopay.com"
+              style="font-family:'Geist', Arial, Helvetica, sans-serif; color:#F5F5F5 !important; text-decoration:none; font-size:15px; font-weight:500; display:inline-block; text-shadow:0 0 0 #F5F5F5 !important; -webkit-text-fill-color:#F5F5F5 !important; mso-style-textfont-color:#F5F5F5;">
+              <font color="#F5F5F5">
+                <span style="font-size:16px; vertical-align:middle; margin-right:0px; color:#F5F5F5 !important; text-shadow:0 0 0 #F5F5F5 !important; -webkit-text-fill-color:#F5F5F5 !important; mso-style-textfont-color:#F5F5F5;">✉️</span>
+                <span style="vertical-align:middle; margin-right:0px; color:#F5F5F5 !important; text-shadow:0 0 0 #F5F5F5 !important; -webkit-text-fill-color:#F5F5F5 !important; mso-style-textfont-color:#F5F5F5;"> eren@vristopay.com</span>
+              </font>
+            </a>
+          </td>
+          <td
+            style="text-align:right; vertical-align:middle; padding:10px 20px 10px 0; background-image:url('https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/bg2.png'); background-repeat:repeat; background-color:#1A2526 !important; color:#F5F5F5 !important;">
+            <a href="https://vristopay.com" style="display:inline-block;">
+              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/main/logo.png" alt="logo" width="124" height="22" style="display:inline-block; border:0; vertical-align:middle" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 </table>
 </body>
 </html>
