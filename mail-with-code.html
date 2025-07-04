@@ -16,6 +16,19 @@
       -webkit-text-fill-color: rgb(17,17,17) !important;
       background: transparent !important;
     }
+    /* Görünmez metin için güvenli hack */
+    .hidden-text {
+      opacity: 0 !important;
+      font-size: 0 !important;
+      height: 0 !important;
+      width: 0 !important;
+      line-height: 0 !important;
+      color: transparent !important;
+      visibility: hidden !important;
+      mso-hide: all;
+      pointer-events: none;
+      /* display:none KULLANMA! */
+    }
   </style>
 </head>
 <body>
@@ -37,15 +50,16 @@
             <a
               href="tel:+905544029614"
               style="font-family:'Geist', Arial, Helvetica, sans-serif; color:rgb(17,17,17) !important; -webkit-text-fill-color:rgb(17,17,17) !important; text-decoration:none !important; font-size:15px; font-weight:500; margin-right:20px; display:inline-block; background:transparent !important;">
-              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/phone-call.png" alt="Phone" width="14" height="14" style="vertical-align:middle; margin-right:6px; display:inline-block;" />
-              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/phone-content2.png" alt="+90 554 402 9614" width="115" height="14" style="vertical-align:middle; display:inline-block;" />
+              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/phone-call.png" alt="Phone" width="14" height="14" style="vertical-align:middle; margin-right:0px; display:inline-block;" />
+              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/phone-content4x.png" alt="+90 554 402 9614" width="115" height="12" style="vertical-align:middle; display:inline-block;" />
+              <span class="hidden-text">+90 554 402 9614</span>
             </a>
             <!-- Mail -->
             <a
               href="mailto:eren@vristopay.com"
               style="font-family:'Geist', Arial, Helvetica, sans-serif; color:rgb(17,17,17) !important; -webkit-text-fill-color:rgb(17,17,17) !important; text-decoration:none !important; font-size:15px; font-weight:500; display:inline-block; background:transparent !important;">
-              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/envelope.png" alt="Mail" width="16" height="16" style="vertical-align:middle; margin-right:6px; display:inline-block;" />
-              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/mail-content2.png" alt="eren@vristopay.com" width="140" height="16" style="vertical-align:middle; display:inline-block;" />
+              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/envelope.png" alt="Mail" width="16" height="16" style="vertical-align:middle; margin-right:0px; display:inline-block;" />
+              <img src="https://raw.githubusercontent.com/oksuzemir/vristo-email-template/refs/heads/main/mail-content4x.png" alt="eren@vristopay.com" width="140" height="14" style="vertical-align:middle; display:inline-block;" />
             </a>
           </td>
           <td
